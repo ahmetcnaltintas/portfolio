@@ -1,5 +1,5 @@
 export const profileData = {
-    name: "Ahmet CANAL Altıntaş",
+    name: "Ahmet Can Altıntaş",
     title: "Full Stack Developer",
     photo: "/ahmet.webp", 
     email: "ahmetcnaltintas@gmail.com",
