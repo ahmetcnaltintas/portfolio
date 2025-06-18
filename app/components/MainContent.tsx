@@ -32,7 +32,7 @@ const MainContent: React.FC<MainContentProps> = () => {
         {/* GitHub Repoları Bölümü */}
         <GithubSection />
 
-        {/* Projeler Bölümüü */}
+        {/* Projeler Bölümü */}
         {/*<ProjectsSection />*/}
 
       </div>
