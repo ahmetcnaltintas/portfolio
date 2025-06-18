@@ -3,7 +3,6 @@
 import React from 'react';
 import SkillsSection from './SkillsSection';
 import GithubSection from './GithubSection';
-import ProjectsSection from './ProjectsSection';
 
 interface MainContentProps {
   activeSection: string;
@@ -33,7 +32,7 @@ const MainContent: React.FC<MainContentProps> = () => {
         <GithubSection />
 
         {/* Projeler Bölümü */}
-        <ProjectsSection />
+        {/*<ProjectsSection />*/}
 
       </div>
     </div>

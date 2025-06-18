@@ -6,6 +6,6 @@ export const profileData = {
     phone: "+90 530 186 79 62",
     location: "Bursa, Türkiye",
     github: "github.com/ahmetcnaltintas",
-    linkedin: "linkedin.com/in/ahmetcanaltintas",
-    website: "ahmetcanaltintas.com",
+    linkedin: "www.linkedin.com/in/ahmet-can-altinta%C5%9F-73840a2a4/",
+    website: "ahmetcnaltintas.com",
 }

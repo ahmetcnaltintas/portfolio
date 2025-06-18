@@ -2,6 +2,8 @@
 
 import React, { useState, useEffect } from 'react';
 import { Github, ExternalLink, Calendar, Star, GitFork } from 'lucide-react';
+import { profileData } from '@/data/profile';
+import Link from 'next/link';
 
 interface GitHubRepo {
   id: number;
@@ -111,15 +113,15 @@ const GithubSection: React.FC = () => {
           </h2>
           <div className="flex-1 h-px bg-gradient-to-r from-slate-300 to-transparent ml-6" />
         </div>
-        <a
-          href="https://github.com/ahmetcanaltintas"
+        <Link
+          href={`https://${profileData.github}`}
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center space-x-2 text-slate-600 dark:text-slate-300 hover:text-slate-800 dark:hover:text-white transition-colors"
         >
           <Github className="w-5 h-5" />
           <span className="text-sm font-medium">Tümünü Gör</span>
-        </a>
+        </Link>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">

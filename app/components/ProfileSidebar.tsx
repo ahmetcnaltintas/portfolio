@@ -3,7 +3,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Mail, Phone, MapPin, Github, Linkedin, Globe, Download } from 'lucide-react';
+import { Mail, Phone, MapPin, Github, Linkedin, Globe, Eye } from 'lucide-react';
 import { ProfileData } from '@/types/profile';
 import { Button } from '@/components/ui/button';
 
@@ -17,14 +17,9 @@ const ProfileSidebar: React.FC<ProfileSidebarProps> = ({
   profileData, 
 }) => {
   
-  const handleDownloadCV = () => {
-    const link = document.createElement('a');
-    link.href = '/cv.pdf';
-    link.download = 'Ahmet_Can_Altintas_CV.pdf';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
+    const handleViewCV = () => {
+      window.open('/cvahmetcnaltintas.pdf', '_blank');
+    };
 
   return (
     <div className="lg:w-1/3 xl:w-1/4 bg-white dark:bg-slate-800 shadow-2xl lg:fixed lg:h-full overflow-y-auto">
@@ -95,7 +90,7 @@ const ProfileSidebar: React.FC<ProfileSidebarProps> = ({
             className="flex items-center space-x-3 text-slate-600 dark:text-slate-300 hover:text-blue-700 dark:hover:text-blue-300 transition-colors group"
           >
             <Linkedin className="w-5 h-5 group-hover:scale-110 transition-transform" />
-            <span className="text-sm">{profileData.linkedin}</span>
+            <span className="text-sm">linkedin</span>
           </Link>
           
           <Link
@@ -110,8 +105,8 @@ const ProfileSidebar: React.FC<ProfileSidebarProps> = ({
         </div>
 
         {/* CV İndir Butonu */}
-        <Button onClick={handleDownloadCV} className='w-full h-11'>
-          <Download className="w-5 h-5" />
+        <Button onClick={handleViewCV} className='w-full h-11 flex items-center justify-center space-x-2'>
+          <Eye className="w-5 h-5" />
           <span>CV Görüntüle</span>
         </Button>
         
