@@ -122,7 +122,7 @@ const GithubSection: React.FC = () => {
         </a>
       </div>
 
-      <div className="grid gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {repos.map((repo) => (
           <div
             key={repo.id}
@@ -130,7 +130,7 @@ const GithubSection: React.FC = () => {
           >
             <div className="flex justify-between items-start mb-4">
               <div className="flex-1">
-                <h3 className="text-xl font-bold text-slate-800 dark:text-white mb-2 flex items-center group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                <h3 className="text-xl font-bold break-words text-slate-800 dark:text-white mb-2 flex items-center group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
                   <Github className="w-5 h-5 mr-2" />
                   {repo.name}
                   {repo.homepage && (
@@ -187,7 +187,7 @@ const GithubSection: React.FC = () => {
                 href={repo.html_url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="ml-4 p-2 rounded-lg bg-slate-100 dark:bg-slate-700 hover:bg-slate-200 dark:hover:bg-slate-600 transition-colors"
+                className="ml-3 p-1 rounded-lg bg-slate-100 dark:bg-slate-700 hover:bg-slate-200 dark:hover:bg-slate-600 transition-colors"
               >
                 <ExternalLink className="w-5 h-5 text-slate-600 dark:text-slate-300" />
               </a>

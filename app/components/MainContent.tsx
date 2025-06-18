@@ -11,8 +11,8 @@ interface MainContentProps {
 
 const MainContent: React.FC<MainContentProps> = () => {
   return (
-    <div className="flex-1 lg:ml-[33.333333%] xl:ml-[25%]">
-      <div className="p-8">
+    <div className="flex-1 min-w-0 lg:ml-[33.333333%] xl:ml-[25%]">
+      <div className="p-4 sm:p-6 md:p-8">
         
         {/* Hoş Geldin Mesajı */}
         <div className="mb-12">
