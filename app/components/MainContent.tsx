@@ -3,6 +3,7 @@
 import React from 'react';
 import SkillsSection from './SkillsSection';
 import GithubSection from './GithubSection';
+import { profileData } from '@/data/profile';
 
 interface MainContentProps {
   activeSection: string;
@@ -19,7 +20,7 @@ const MainContent: React.FC<MainContentProps> = () => {
             Merhaba!
           </h1>
           <p className="text-xl text-slate-600 dark:text-slate-300 leading-relaxed">
-            Ben <span className="font-semibold text-blue-600 dark:text-blue-400">Ahmet Can Altıntaş</span>, 
+            Ben <span className="font-semibold text-blue-600 dark:text-blue-400">{profileData.name}</span>, 
             Teknolojiye tutkuyla bağlı, öğrenmeye istekli ve sürekli kendini geliştirmeye çalışan bir geliştiriciyim.
             Yeni projelerle deneyim kazanmayı ve her gün bir adım daha ileri gitmeyi hedefliyorum.
           </p>
